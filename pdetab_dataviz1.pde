@@ -55,3 +55,10 @@ void draw(){
 	}
 }
 
+void keyPressed(){
+	int mouseposx = mouseX/(pelosize-20);
+	int mouseposy = mouseY/(pelosize-20);
+pelos[mouseposx][mouseposy] =new Pelo(mouseposx*(pelosize-20), mouseposy*(pelosize-20), (int)random(1,12), admission[(int)random(1,3)]);
+
+}
+
